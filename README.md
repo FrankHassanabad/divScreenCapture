@@ -24,3 +24,18 @@ like this
 }
 ```
 
+For each link entry you can add a name which will be the folder to put all the images into and a URL which will be the
+website to retrieve all the div images from.  In the above example, you will get two folders of
+
+```
+images/cnnMainPage
+images/theOnion
+```
+
+after running the program.  Speaking of which, to execute this script run
+
+```
+casperjs divScreenGrabber.js
+```
+
+
