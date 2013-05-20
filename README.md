@@ -38,4 +38,46 @@ after running the program.  Speaking of which, to execute this script run
 casperjs divScreenGrabber.js
 ```
 
+Optionally, to wait for loading of a site you can add a defaultWait in milliseconds like so
+
+```
+{
+    "defaultWait": 5000
+    "links": [
+        {
+            "name": "cnnMainPage",
+            "url": "http://www.cnn.com"
+        },
+        {
+            "name": "theOnion",
+            "url": "http:/http://www.theonion.com/"
+        }
+    ]
+}
+```
+
+Also, if you want to login to a website for authentication _first_ before downloading images you can do the following
+
+```
+{
+    "defaultWait": 5000,
+    "start": {
+        "name": "optionalLogin",
+        "url": "someLoginURL",
+        "userNameSelector": "#Email",
+        "passwordSelector": "#Passwd",
+        "clickSelector": "#signIn",
+        "userName": "someuserId",
+        "password": "somePassword"
+    },
+    "links": [
+        {
+            "name": "someName",
+            "url": "someURL"
+        }
+    ]
+}
+```
+
+
 
