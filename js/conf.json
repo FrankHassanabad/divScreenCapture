@@ -1,0 +1,12 @@
+{
+    "links": [
+        {
+            "name": "cnnMainPage",
+            "url": "http://www.cnn.com"
+        },
+        {
+            "name": "theOnion",
+            "url": "http:/http://www.theonion.com/"
+        }
+    ]
+}
